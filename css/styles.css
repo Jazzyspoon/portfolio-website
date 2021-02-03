@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-	font-size: 25px;
+	font-size: 26px;
 	font-weight: 700;
 	
 }
@@ -44,6 +44,19 @@ h3 {
 	font-size: 18px;
 	font-weight: 700;
 
+}
+
+h4 {font-size: 25px;
+	font-weight: 700;
+
+}
+
+.about-images {
+	height: 290px;
+}
+
+.aboutimages {
+	height: 280px;
 }
 
 a {
@@ -157,6 +170,8 @@ button:focus,
 
 .page-header__item {
 	flex: 0 1 60px;
+	height: 110px;
+	width: 100px;
 }
 
 .styled-table {
