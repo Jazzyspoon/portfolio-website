@@ -21,7 +21,7 @@ h1 {
 
 h2 {
 	font-size: 26px;
-	font-weight: 700;
+	font-weight: 600;
 	
 }
 
@@ -33,15 +33,14 @@ h3 {
 
 h4 {font-size: 25px;
 	font-weight: 700;
-
 }
 
 .about-images {
-	height: 290px;
+	max-height: 290px;
 }
 
 .aboutimages {
-	height: 280px;
+	max-height: 280px;
 }
 
 a {
@@ -112,7 +111,6 @@ button:focus,
 	        transition-duration: 0.9;
 }
 
-
 .navigation-list__item--active {
 	text-decoration: none;
 	opacity: 50%;
@@ -120,8 +118,8 @@ button:focus,
 
 .profile__portrait {
 	float: right;
-	width: 600px;
-	margin-right: 80px;
+	max-width: 100%;
+	height: auto;
 	border-radius: 50%;
 	-webkit-box-shadow: 0 0 40px -10px #000;
 	        box-shadow: 0 0 40px -10px #000;
@@ -129,8 +127,9 @@ button:focus,
 
 .profile__picture  {
 	float: right;
-	width: 700px;
-	margin-right: 40px;
+	max-width: 100%;
+	height: auto;
+	margin-right: 10px;
 	border-radius: 50%;
 	-webkit-box-shadow: 0 0 40px -10px #000;
 	        box-shadow: 0 0 40px -10px #000;
@@ -142,8 +141,9 @@ button:focus,
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 12px 12px;
-    border-image-width: 12px;
+    padding: 12px;
+	border-image-width: 12px;
+	
  }
 
 .column {
@@ -187,7 +187,10 @@ button:focus,
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
 	width: 100%;
+	padding: 20px 10px;
 	background-color: #e7eeff;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.8);
 	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -198,8 +201,11 @@ button:focus,
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 1 60px;
 	        flex: 0 1 60px;
-	height: 110px;
-	width: 100px;
+}
+
+.logo {
+	float: left;
+	border-right: 20px;
 }
 
 .styled-table {
@@ -245,15 +251,18 @@ table.center {
 	-webkit-box-flex: 1;
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
-	text-align: center;
+	text-align: right;
 }
 
 .navigation-list {
+	float: right;
 	list-style-type: none;
-}
+	}
 
 .navigation-list li {
-	display: inline-block;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
 	margin-left: 15px;
 }
 
@@ -321,14 +330,13 @@ table.center {
 }
 
 .form {
-	width: 500px;
+	max-width: 700px;
 	height: 440px;
 	background: inherit;
 	border-radius: 8px;
 	-webkit-box-shadow: 10px 10px 40px -14px #000;
 	        box-shadow: 10px 10px 40px -14px #000;
 	padding: 20px 30px;
-	max-width: calc(100vw - 40px);
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	font-family: inherit;
@@ -379,13 +387,14 @@ p:before {
 }
 
 .Contact {
-	position: relative;
+	float: left;
 	bottom: 2px;
 	top: 10px;
-	right:-200px;
+	margin-left: 10px;
+	right: 50px;
 	background: #e7eeff;
 	color: black;
-	width: 320px;
+	max-width: 700px;
 	border-radius: 6px;
 	font-size: 13px;
 }
@@ -566,9 +575,7 @@ nav.pullRightLeft a:hover:before, nav.pullRightLeft a:hover:after
     	grid-column: auto /auto;
     	grid-row: auto / auto;
     }
-    h1 {
-    	font-size: 16px;
-    }
+    
 
 }
 
