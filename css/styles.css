@@ -81,7 +81,7 @@ a:hover, a:focus {
 	display: inline-block;
 	font-family: inherit;
 	background-color: var(--secondary-color); 
-	font-color: var(--black);
+	font: var(--black);
 	text-decoration: none;
 	size: 16px;
 	padding: 25px;
@@ -306,7 +306,7 @@ p:before {
 	display: block;
 	margin: 28px 0 0;
 	font-size: 14px;
-	font-color: black;
+	font: black;
 }
 
 .button-space3 {
@@ -316,7 +316,7 @@ p:before {
 	font-family: inherit;
 	border: 2px solid var(--secondary-color);
 	background: 0;
-	font-color: var(--black);
+	font: var(--black);
 	cursor: pointer;
 	transition: all .3s;
 }
@@ -348,7 +348,7 @@ p:before {
 nav.container
 {
     font-family: inherit;
-    font-color: black;
+    font: black;
     margin: 0 auto;
 	padding: 10px;
 	text-align: right;
