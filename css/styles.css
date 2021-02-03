@@ -23,6 +23,9 @@ body {
   --table-bottom: #009879;
   --input-border-bottom: #bebed2;
   --input-focus-bottom: #78788c;
+  --box-shadow-lightest: 0 0 20px rgba(0, 0, 0, 0.15);
+  --box-shadow-contact: 10px 10px 40px -14px #000; 
+  --box-shadow-dark: 0 0 40px -10px #000;
 }
 
 
@@ -72,7 +75,7 @@ a:hover, a:focus {
 	border-radius: 50%;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.8);
 	transition-timing-function: ease-in-out (0.95,0.1,0.95,1);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.10);
+	box-shadow: var(--box-shadow-lighter);
 }
 
 button:hover,
@@ -81,16 +84,12 @@ button:focus,
 .button:focus {
 	cursor: pointer;
 	opacity: 0.2;
-	font-size: 12px;
+	font-size: 20px;
 	transition: 0.6s;
 	transition-duration: 0.9;
 
 }
 
-.button__secondary {
-	background-color: var(--secondary-color);
-	color: var(--blue);
-}
 
 .navigation-list__item--active {
 	text-decoration: none;
@@ -102,7 +101,7 @@ button:focus,
 	width: 600px;
 	margin-right: 80px;
 	border-radius: 50%;
-	box-shadow:0 0 40px -10px #000;
+	box-shadow: var(--box-shadow-dark);
 }
 
 .profile__picture  {
@@ -110,7 +109,7 @@ button:focus,
 	width: 700px;
 	margin-right: 40px;
 	border-radius: 50%;
-	box-shadow:0 0 40px -10px #000;
+	box-shadow: var(--box-shadow-dark);
 }
 
 .row {
@@ -154,7 +153,7 @@ button:focus,
 	width: 100%;
 	background-color: var(--secondary-color);
 	border-bottom: 2px solid rgba(0, 0, 0, 0.8);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	box-shadow: var(--box-shadow-lightest);
 }
 
 .page-header__item {
@@ -167,7 +166,7 @@ button:focus,
     font-size: 0.9em;
     font-family: inherit;
     min-width: 400px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: var(--box-shadow-lightest);
  }
 
 .styled-table thead tr {
@@ -213,15 +212,6 @@ table.center {
 	margin-left: 15px;
 }
 
-.button-space {
-	font-size: 25px;
-    padding: 30px;
-	clear: both;
-	display: flex;
-	flex-direction: center;
-	justify-content: center;
-}
-
 .button-space2 {
 	font-size: 25px;
     padding: 30px;
@@ -250,7 +240,7 @@ table.center {
 
 .grid__item {
 	background-color: var(--secondary-color);
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+	box-shadow: var(--box-shadow-lightest); 
 }
 
 .studio {
@@ -271,7 +261,7 @@ table.center {
 	height: 440px;
 	background: inherit;
 	border-radius: 8px;
-	box-shadow: 0 0 40px -10px #000;
+	box-shadow: var(--box-shadow-dark)
 	padding: 20px 30px;
 	max-width: calc(100vw - 40px);
 	box-sizing: border-box;
@@ -327,11 +317,7 @@ p:before {
 	width: 320px;
 	border-radius: 6px;
 	font-size: 13px;
-	box-shadow: 10px 10px 40px -14px #000;
-}
-
-span {
-	margin:0 5px 0 15px
+	box-shadow: var(--box-shadow-contact);
 }
 
 .sun {
