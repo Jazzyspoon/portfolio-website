@@ -36,7 +36,7 @@ h1 {
 
 h2 {
 	font-size: 26px;
-	font-weight: 700;
+	font-weight: 600;
 	
 }
 
@@ -48,15 +48,14 @@ h3 {
 
 h4 {font-size: 25px;
 	font-weight: 700;
-
 }
 
 .about-images {
-	height: 290px;
+	max-height: 290px;
 }
 
 .aboutimages {
-	height: 280px;
+	max-height: 280px;
 }
 
 a {
@@ -102,7 +101,6 @@ button:focus,
 	transition-duration: 0.9;
 }
 
-
 .navigation-list__item--active {
 	text-decoration: none;
 	opacity: 50%;
@@ -110,16 +108,17 @@ button:focus,
 
 .profile__portrait {
 	float: right;
-	width: 600px;
-	margin-right: 80px;
+	max-width: 100%;
+	height: auto;
 	border-radius: 50%;
 	box-shadow: var(--box-shadow-dark);
 }
 
 .profile__picture  {
 	float: right;
-	width: 700px;
-	margin-right: 40px;
+	max-width: 100%;
+	height: auto;
+	margin-right: 10px;
 	border-radius: 50%;
 	box-shadow: var(--box-shadow-dark);
 }
@@ -127,8 +126,9 @@ button:focus,
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 12px 12px;
-    border-image-width: 12px;
+    padding: 12px;
+	border-image-width: 12px;
+	
  }
 
 .column {
@@ -162,7 +162,9 @@ button:focus,
 
 .page-header {
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
+	padding: 20px 10px;
 	background-color: var(--secondary-color);
 	border-bottom: 2px solid rgba(0, 0, 0, 0.8);
 	box-shadow: var(--box-shadow-lightest);
@@ -170,8 +172,11 @@ button:focus,
 
 .page-header__item {
 	flex: 0 1 60px;
-	height: 110px;
-	width: 100px;
+}
+
+.logo {
+	float: left;
+	border-right: 20px;
 }
 
 .styled-table {
@@ -214,15 +219,16 @@ table.center {
 
 .page-header .page-header__item:last-child {
 	flex-grow: 1;
-	text-align: center;
+	text-align: right;
 }
 
 .navigation-list {
+	float: right;
 	list-style-type: none;
-}
+	}
 
 .navigation-list li {
-	display: inline-block;
+	display: inline-flex;
 	margin-left: 15px;
 }
 
@@ -271,13 +277,12 @@ table.center {
 }
 
 .form {
-	width: 500px;
+	max-width: 700px;
 	height: 440px;
 	background: inherit;
 	border-radius: 8px;
 	box-shadow: var(--box-shadow-contact);
 	padding: 20px 30px;
-	max-width: calc(100vw - 40px);
 	box-sizing: border-box;
 	font-family: inherit;
 	position: relative;
@@ -322,13 +327,14 @@ p:before {
 }
 
 .Contact {
-	position: relative;
+	float: left;
 	bottom: 2px;
 	top: 10px;
-	right:-200px;
+	margin-left: 10px;
+	right: 50px;
 	background: var(--secondary-color);
 	color: black;
-	width: 320px;
+	max-width: 700px;
 	border-radius: 6px;
 	font-size: 13px;
 }
@@ -459,9 +465,7 @@ nav.pullRightLeft a:hover:before, nav.pullRightLeft a:hover:after
     	grid-column: auto /auto;
     	grid-row: auto / auto;
     }
-    h1 {
-    	font-size: 16px;
-    }
+    
 
 }
 
