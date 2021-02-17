@@ -118,7 +118,7 @@ button:focus,
 	float: right;
 	max-width: 100%;
 	height: auto;
-	margin-right: 10px;
+	margin-right: 100px;
 	border-radius: 50%;
 	box-shadow: var(--box-shadow-dark);
 }
@@ -164,6 +164,7 @@ button:focus,
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
+	
 	padding: 20px 10px;
 	background-color: var(--secondary-color);
 	border-bottom: 2px solid rgba(0, 0, 0, 0.8);
@@ -329,8 +330,9 @@ p:before {
 .Contact {
 	float: left;
 	bottom: 2px;
+	border-left-width: 100px;
 	top: 10px;
-	margin-left: 10px;
+	margin-left: 100px;
 	right: 50px;
 	background: var(--secondary-color);
 	color: black;
