@@ -129,7 +129,7 @@ button:focus,
 	float: right;
 	max-width: 100%;
 	height: auto;
-	margin-right: 10px;
+	margin-right: 100px;
 	border-radius: 50%;
 	-webkit-box-shadow: 0 0 40px -10px #000;
 	        box-shadow: 0 0 40px -10px #000;
@@ -190,6 +190,7 @@ button:focus,
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	width: 100%;
+	
 	padding: 20px 10px;
 	background-color: #e7eeff;
 	border-bottom: 2px solid rgba(0, 0, 0, 0.8);
@@ -317,12 +318,10 @@ table.center {
 
 .grid__item:last-child {
 	-ms-grid-column: 3;
-	    grid-column: 3;
 	    grid-column-start: 3;
 	-ms-grid-column-span: -1;
 	grid-column-end: 2;
 	-ms-grid-row: 1;
-	    grid-row: 1;
 	    grid-row-start: 1;
 	-ms-grid-row-span: 1;
 	grid-row-end: 2;
@@ -389,8 +388,9 @@ p:before {
 .Contact {
 	float: left;
 	bottom: 2px;
+	border-left-width: 100px;
 	top: 10px;
-	margin-left: 10px;
+	margin-left: 100px;
 	right: 50px;
 	background: #e7eeff;
 	color: black;
