@@ -1,5 +1,4 @@
 
-
 body {
 	font-family: 'Roboto Slab', sans-serif;
 	font-weight: 400;
@@ -48,14 +47,6 @@ h3 {
 
 h4 {font-size: 25px;
 	font-weight: 700;
-}
-
-.about-images {
-	max-height: 290px;
-}
-
-.aboutimages {
-	max-height: 280px;
 }
 
 a {
@@ -124,16 +115,24 @@ button:focus,
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 12px;
-	border-image-width: 12px;
-	
+   flex-direction: row;
+   display: inline-flex;
+   flex-wrap: wrap;
+   padding: 0 4px;
+
  }
 
 .column {
-	width: 100%;
+   flex: 25%;
+   max-width: 25%;
+   padding: 0 4px;
 }
+
+.column img {
+   margin-top: 8px;
+   width: 100%;
+   padding: 10px;
+  }
 
 .page-footer {
 	clear: both;
@@ -407,44 +406,18 @@ nav.pullRightLeft a:hover:before, nav.pullRightLeft a:hover:after
     width: 100%;
 }
 
-
-@keyframes cloud-move {
-
-	from {
-		transform: translate(0,50px);
-	}
-	to {
-		transform: translate(200px, 50px);
-	}
-}
-
-@keyframes cloud-move-reverse {
-    from {
-       transform: translate(446px, 48px);
-    }
-    to {
-       transform: translate(100px, 48px);
-    }
-}
-
-@keyframes color-change {
-    	0% {
-    		fill: #edc655;
-    }
-    	50% {
-    		fill: #fcffad;
-    }
-    	100% {
-    		fill: #f76414;
-    }
-}
-
 @media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
+	.column {
+	   flex: 50%;
+	   max-width: 50%;
+	}
+ }
+ @media screen and (max-width: 600px) {
+	.column {
+	   flex: 100%;
+	   max-width: 100%;
+	}
+ }
 
 @media all and (max-width: 500px) {
 	.grid {
