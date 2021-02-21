@@ -340,18 +340,6 @@ p:before {
 	font-size: 13px;
 }
 
-.sun {
-    animation: 4s color-change infinite alternate linear;
-}
-
-.cloud-front {
-    animation: 45s cloud-move infinite alternate linear;
-}
-
-.cloud-back  {
-    animation: 45s cloud-move-reverse infinite alternate linear;
-}
-
 nav.container
 {
     font-family: inherit;
@@ -376,8 +364,8 @@ nav.container a
 
 .deepOrange
 {
-        background: var(--secondary-color)
-    }
+   background: var(--secondary-color)
+}
 
 nav.pullRightLeft a:before, nav.pullRightLeft a:after
 {
