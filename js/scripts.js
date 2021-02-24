@@ -8,9 +8,12 @@ submitbutton.addEventListener('click', function(e) {
      
     let emailValue = EmailElement.value;
     let messageValue = messageElement.value;
+
     if(emailValue.includes('@')) {
     	//all good
     	alert('Thank you For your message!')
     } else{
-    	alert('oops, please enter an email address!')}
-})
+    	alert('oops, please complete all fields!')};
+                  
+});
+     
