@@ -148,8 +148,7 @@ body {
   }
   
   .styled-table {
-	border-collapse: collapse;
-	margin: 25px 0;
+	margin: 25px;
 	font-size: 0.9em;
 	font-family: inherit;
 	min-width: 300px;
