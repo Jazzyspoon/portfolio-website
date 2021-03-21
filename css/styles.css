@@ -26,17 +26,17 @@ body {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -62,38 +62,6 @@ a:focus {
   text-decoration: none;
 }
 
-.button,
-button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: var(--secondary-color);
-  font: var(--black);
-  text-decoration: none;
-  size: 16px;
-  padding: 25px;
-  border-radius: 50%;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
-  transition-timing-function: ease-in-out (0.95, 0.1, 0.95, 1);
-  box-shadow: var(--box-shadow-lighter);
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  cursor: pointer;
-  opacity: 0.2;
-  font-size: 20px;
-  transition: 0.6s;
-  transition-duration: 0.9;
-}
-
-.navigation-list__item--active {
-  text-decoration: none;
-  opacity: 50%;
-}
-
 .profile__portrait {
   float: right;
   max-width: 100%;
@@ -103,16 +71,16 @@ button:focus,
 }
 
 .profile__picture {
-  float: right;
+  display: flex;
+  justify-content: center;
   max-width: 100%;
   height: auto;
-  margin-right: 100px;
   border-radius: 50%;
   box-shadow: var(--box-shadow-dark);
 }
 
 .row {
-  flex-direction: row;
+  flex-direction: center;
   display: inline-flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -120,14 +88,12 @@ button:focus,
 
 .column {
   flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
 }
 
 .column img {
   margin-top: 8px;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
 }
 
 .page-footer {
@@ -151,19 +117,13 @@ button:focus,
   box-sizing: border-box;
 }
 
-.profile__text {
-  flex: 1 1 100px;
+.card-img-top {
+  width: 100%;
+  height: 300px;
 }
 
-.page-header {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-
-  padding: 20px 10px;
-  background-color: var(--secondary-color);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.8);
-  box-shadow: var(--box-shadow-lightest);
+.profile__text {
+  flex: 1 1 100px;
 }
 
 .page-header__item {
@@ -212,21 +172,6 @@ table.center {
   margin-right: auto;
 }
 
-.page-header .page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
-}
-
-.navigation-list {
-  float: right;
-  list-style-type: none;
-}
-
-.navigation-list li {
-  display: inline-flex;
-  margin-left: 15px;
-}
-
 .button-space2 {
   font-size: 25px;
   padding: 30px;
@@ -246,7 +191,7 @@ table.center {
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   padding: 20px;
   margin: 20px;
@@ -261,13 +206,6 @@ table.center {
 .studio {
   text-align: center;
   border-width: 20px;
-}
-
-.grid__item:last-child {
-  grid-column-start: 3;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
 }
 
 .form {
@@ -321,66 +259,31 @@ p:before {
 }
 
 .Contact {
-  float: left;
-  bottom: 2px;
+  display: flex;
+  justify-content: center;
   border-left-width: 100px;
-  top: 10px;
-  margin-left: 100px;
-  right: 50px;
   background: var(--secondary-color);
   color: black;
-  max-width: 700px;
+  max-width: 440px;
   border-radius: 6px;
   font-size: 13px;
 }
 
-nav.container {
-  font-family: inherit;
-  font: black;
-  margin: 0 auto;
-  padding: 10px;
-  text-align: right;
-  width: 100%;
+.navbar-brand {
+  color: var(--primary-color);
+  border: white;
+  border-width: 12px;
 }
 
-nav.container a {
-  color: black;
-  text-decoration: none;
-  font: 20px inherit;
-  margin: 0px 10px;
-  padding: 10px 10px;
-  position: relative;
-  z-index: 0;
-  cursor: pointer;
+.nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.deepOrange {
-  background: var(--secondary-color);
-}
-
-nav.pullRightLeft a:before,
-nav.pullRightLeft a:after {
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  top: 0px;
-  content: "";
-  background: black;
-  opacity: 0.3;
-  transition: all 0.3s;
-}
-
-nav.pullRightLeft a:before {
-  left: 0px;
-}
-
-nav.pullRightLeft a:after {
-  right: 0px;
-}
-
-nav.pullRightLeft a:hover:before,
-nav.pullRightLeft a:hover:after {
-  width: 100%;
+#form_container {
+  padding: 15px 15px;
+  margin-top: 15px;
+  background: rgba(133, 202, 207, 0.75);
 }
 
 @media screen and (max-width: 800px) {
