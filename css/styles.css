@@ -140,7 +140,7 @@ a:focus {
   margin: 25px 0;
   font-size: 0.9em;
   font-family: inherit;
-  min-width: 400px;
+  min-width: 300px;
   box-shadow: var(--box-shadow-lightest);
 }
 
@@ -170,7 +170,7 @@ a:focus {
 table.center {
   margin-left: auto;
   margin-right: auto;
-  max-width: 300px;
+  max-width: 230px;
 }
 
 .button-space2 {
