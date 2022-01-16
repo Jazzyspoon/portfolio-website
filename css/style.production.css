@@ -388,10 +388,6 @@ p:before {
   }
 }
 
-/*
-  Colors used
-  
-  Text Color (Black): #000000;
-  Primary Color (Cosmic Latte): #FFF8E7;
-  Secondary Color (Mostly blue): #e7eeff;
-   */
+.italic {
+  font-style: italic;
+}
